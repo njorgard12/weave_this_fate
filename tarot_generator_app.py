@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, jsonify
 import random
 import json
 import os
-import openai
+from openai import OpenAI
 
 # === Flask Setup ===
 app = Flask(__name__)
@@ -19,8 +19,10 @@ tone = tarot_data.get("tone", "grim and savage sword-and-sorcery atmosphere fill
 
 # === API Setup ===
 # Expecting OpenRouter key in environment variable
-openai.api_key = os.getenv("OPENROUTER_API_KEY")
-openai.api_base = "https://openrouter.ai/api/v1"
+client = OpenAI(
+    api_key=os.getenv("OPENROUTER_API_KEY"),
+    base_url="https://openrouter.ai/api/v1"
+)
 
 # === Utility Functions ===
 def draw_six_cards():
@@ -80,13 +82,13 @@ def generate_story():
     profession = data.get("profession", "Wanderer")
     gender = data.get("gender", "He / Him")
 
-    if not openai.api_key:
+    if not os.getenv("OPENROUTER_API_KEY"):
         return jsonify({"error": "Missing OpenRouter API key. Please set OPENROUTER_API_KEY in your environment."}), 400
 
     prompt = build_prompt(selected_cards, race, profession, gender)
 
     try:
-        response = openai.ChatCompletion.create(
+        response = client.chat.completions.create(
             model="gpt-4o-mini",
             messages=[
                 {"role": "system", "content": "You are a grimdark fantasy storyteller."},
@@ -95,10 +97,11 @@ def generate_story():
             temperature=0.9,
             max_tokens=800
         )
-        story = response["choices"][0]["message"]["content"].strip()
+        story = response.choices[0].message.content.strip()
         return jsonify({"story": story})
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+
 
 # === Run App ===
 if __name__ == "__main__":
