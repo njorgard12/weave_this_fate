@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weave This Fate</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #0a0908;
+      background-image: radial-gradient(circle at 20% 20%, #1c1a17, #0a0908 80%);
+      color: #dcd3ba;
+      font-family: 'Cormorant Garamond', serif;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-family: 'Cinzel Decorative', serif;
+      color: #d4af37;
+      font-size: 3em;
+      margin-top: 30px;
+      letter-spacing: 3px;
+      text-shadow: 0 0 8px rgba(212,175,55,0.3);
+    }
+
+    .controls {
+      margin: 25px auto;
+      background-color: rgba(15, 15, 15, 0.7);
+      padding: 15px 20px;
+      border: 1px solid #3a321d;
+      border-radius: 8px;
+      width: fit-content;
+      box-shadow: 0 0 15px rgba(100, 80, 30, 0.25);
+    }
+
+    label {
+      font-family: 'Cinzel Decorative', serif;
+      color: #cbb885;
+      font-size: 1.1em;
+      margin-right: 5px;
+    }
+
+    select, button {
+      background-color: #1b1814;
+      color: #e0d7c4;
+      border: 1px solid #5e4d2f;
+      padding: 8px 12px;
+      margin: 5px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1em;
+      transition: all 0.3s ease;
+    }
+
+    select:hover, button:hover {
+      background-color: #2a241c;
+      box-shadow: 0 0 10px rgba(212,175,55,0.4);
+      cursor: pointer;
+    }
+
+    .card-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+      gap: 15px;
+    }
+
+    .card {
+      position: relative;
+      width: 140px;
+      height: 230px;
+      border: 2px solid #403820;
+      border-radius: 10px;
+      background-color: #14110f;
+      overflow: hidden;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.95;
+    }
+
+    .card-name {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+      background-color: rgba(0,0,0,0.7);
+      color: #e0d7c4;
+      padding: 4px 0;
+      border-top: 1px solid #3a321d;
+      font-family: 'Cinzel Decorative', serif;
+      letter-spacing: 0.5px;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(212,175,55,0.5);
+      border-color: #d4af37;
+    }
+
+    .story {
+      max-width: 850px;
+      margin: 50px auto;
+      background-color: rgba(25, 22, 18, 0.85);
+      padding: 25px;
+      border: 1px solid #4c3a1b;
+      border-radius: 10px;
+      text-align: left;
+      white-space: pre-wrap;
+      font-size: 1.1em;
+      line-height: 1.6em;
+      box-shadow: 0 0 25px rgba(100, 80, 30, 0.2);
+    }
+
+    .buttons {
+      margin-top: 15px;
+    }
+
+    .save-buttons {
+      margin-top: 20px;
+    }
+
+    /* Spinner overlay */
+    .overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+      z-index: 999;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .spinner {
+      border: 6px solid #3a321d;
+      border-top: 6px solid #d4af37;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .loading-text {
+      margin-top: 15px;
+      font-family: 'Cinzel Decorative', serif;
+      color: #bda567;
+      font-size: 1.2em;
+      letter-spacing: 1px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Weave This Fate</h1>
+
+  <div class="controls">
+    <label for="profession">Profession:</label>
+    <select id="profession">
+      {% for p in professions %}
+      <option value="{{p}}">{{p}}</option>
+      {% endfor %}
+    </select>
+
+    <label for="race">Race:</label>
+    <select id="race">
+      <option value="Human">Human</option>
+      <option value="Fey">Fey</option>
+      <option value="Dwarf">Dwarf</option>
+      <option value="Gnome">Gnome</option>
+      <option value="Halfling">Halfling</option>
+      <option value="Orc">Orc</option>
+      <option value="Ogre">Ogre</option>
+      <option value="Half-Giant">Half-Giant</option>
+      <option value="Half-Demon">Half-Demon</option>
+    </select>
+
+    <label for="gender">Gender:</label>
+    <select id="gender">
+      <option value="he">He / Him</option>
+      <option value="she">She / Her</option>
+      <option value="it">It / They</option>
+    </select>
+
+    <div class="buttons">
+      <button id="drawBtn">Draw New Cards</button>
+      <button id="weaveBtn">Weave Story</button>
+    </div>
+  </div>
+
+  <div class="card-grid" id="cardGrid"></div>
+  <div class="story" id="story"></div>
+
+  <div class="save-buttons" id="saveButtons" style="display:none;">
+    <button id="copyBtn">Copy to Clipboard</button>
+    <button id="downloadBtn">Download as TXT</button>
+  </div>
+
+  <div class="overlay" id="loadingOverlay">
+    <div class="spinner"></div>
+    <div class="loading-text">The Fates Are Weaving...</div>
+  </div>
+
+  <script>
+    let drawnCards = [];
+
+    document.getElementById("drawBtn").addEventListener("click", async () => {
+      document.getElementById("story").innerHTML = "";
+      document.getElementById("saveButtons").style.display = "none";
+      const response = await fetch("/draw_cards", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({})
+      });
+      const data = await response.json();
+      drawnCards = data.cards;
+
+      const grid = document.getElementById("cardGrid");
+      grid.innerHTML = "";
+      drawnCards.forEach(card => {
+        const cardDiv = document.createElement("div");
+        cardDiv.className = "card";
+        const img = document.createElement("img");
+        const filename = card.toLowerCase().replace(/\s+/g, "_") + ".jpg";
+        img.src = `/static/cards/${filename}`;
+        const name = document.createElement("div");
+        name.className = "card-name";
+        name.textContent = card;
+        cardDiv.appendChild(img);
+        cardDiv.appendChild(name);
+        grid.appendChild(cardDiv);
+      });
+    });
+
+    document.getElementById("weaveBtn").addEventListener("click", async () => {
+      if (drawnCards.length === 0) {
+        alert("Draw your cards first.");
+        return;
+      }
+
+      const profession = document.getElementById("profession").value;
+      const race = document.getElementById("race").value;
+      const gender = document.getElementById("gender").value;
+
+      const overlay = document.getElementById("loadingOverlay");
+      overlay.style.display = "flex";
+
+      const response = await fetch("/weave_story", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+          profession,
+          race,
+          gender,
+          cards: drawnCards
+        })
+      });
+
+      const data = await response.json();
+      overlay.style.display = "none";
+      document.getElementById("story").textContent = data.story;
+      document.getElementById("saveButtons").style.display = "block";
+    });
+
+    document.getElementById("copyBtn").addEventListener("click", () => {
+      const storyText = document.getElementById("story").textContent;
+      navigator.clipboard.writeText(storyText);
+      alert("The tale has been etched into your clipboard.");
+    });
+
+    document.getElementById("downloadBtn").addEventListener("click", () => {
+      const storyText = document.getElementById("story").textContent;
+      const blob = new Blob([storyText], { type: "text/plain" });
+      const link = document.createElement("a");
+      link.href = URL.createObjectURL(blob);
+      link.download = "woven_fate.txt";
+      link.click();
+    });
+  </script>
+</body>
+</html>
