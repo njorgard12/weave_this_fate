@@ -210,17 +210,18 @@
       const cards = await res.json();
       selectedCards = cards;              // keep whole objects for backend
 
-      // Render cards horizontally with correct static path
-      cardsContainer.innerHTML = cards.map(c => {
-        const imgPath = c.image && !c.image.startsWith('http')
-          ? `/static/cards/${c.image}`
-          : c.image || '';
-        return `
-          <div class="card">
-            <img src="${imgPath}" alt="${c.name}" onerror="this.style.display='none'">
-            <div class="card-name">${c.name}</div>
-          </div>`;
-      }).join('');
+     // Render cards horizontally with correct static path
+cardsContainer.innerHTML = cards.map(c => {
+  const imgPath = c.image && !c.image.startsWith('http')
+    ? `/static/cards/${c.image.toLowerCase()}`
+    : c.image || '';
+  return `
+    <div class="card">
+      <img src="${imgPath}" alt="${c.name}" onerror="this.style.display='none'">
+      <div class="card-name">${c.name}</div>
+    </div>`;
+}).join('');
+
 
       weaveBtn.disabled = selectedCards.length !== 6;
     });
