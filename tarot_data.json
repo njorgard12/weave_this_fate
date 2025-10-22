@@ -1,126 +1,527 @@
 {
-"tone": "A grimdark sword-and-sorcery world of blood, ruin, and fate — where heroes claw meaning from the bones of dead gods.",  
-
-"cards": [
-    { "name": "The Fool", "suit": "Major", "image": "major/the_fool.jpg", "meaning": "A wanderer unburdened by reason or fate, stepping into the unknown where madness and glory share a cup." },
-    { "name": "The Magician", "suit": "Major", "image": "major/the_magician.jpg", "meaning": "Will made flesh; mastery over chaos through the illusion of control. The Magician bends power, but power bends back." },
-    { "name": "The High Priestess", "suit": "Major", "image": "major/the_high_priestess.jpg", "meaning": "Keeper of veiled truths; her silence is a weapon sharper than any blade." },
-    { "name": "The Empress", "suit": "Major", "image": "major/the_empress.jpg", "meaning": "Mother of decay and rebirth, her touch brings both harvest and ruin." },
-    { "name": "The Emperor", "suit": "Major", "image": "major/the_emperor.jpg", "meaning": "A ruler forged in blood; his law is carved into the bones of the fallen." },
-    { "name": "The Hierophant", "suit": "Major", "image": "major/the_hierophant.jpg", "meaning": "A priest of hollow gods; faith as a chain, not a path." },
-    { "name": "The Lovers", "suit": "Major", "image": "major/the_lovers.jpg", "meaning": "Union through destruction; passion that burns the world clean." },
-    { "name": "The Chariot", "suit": "Major", "image": "major/the_chariot.jpg", "meaning": "Victory through domination; the wheel crushes both enemy and self." },
-    { "name": "Strength", "suit": "Major", "image": "major/strength.jpg", "meaning": "Courage is a beast tamed only by will; blood answers to neither mercy nor fear." },
-    { "name": "The Hermit", "suit": "Major", "image": "major/the_hermit.jpg", "meaning": "The light of solitude reveals that truth is an abyss, not a path." },
-    { "name": "Wheel of Fortune", "suit": "Major", "image": "major/wheel_of_fortune.jpg", "meaning": "The turning of fate grinds men into dust and kings into beggars." },
-    { "name": "Justice", "suit": "Major", "image": "major/justice.jpg", "meaning": "Balance bought with blood; the scales never weigh mercy." },
-    { "name": "The Hanged Man", "suit": "Major", "image": "major/the_hanged_man.jpg", "meaning": "Sacrifice without redemption; enlightenment found at the edge of despair." },
-    { "name": "Death", "suit": "Major", "image": "major/death.jpg", "meaning": "The end that births beginnings; decay is life’s cruel twin." },
-    { "name": "Temperance", "suit": "Major", "image": "major/temperance.jpg", "meaning": "Harmony forged through pain; the alchemy of endurance and surrender." },
-    { "name": "The Devil", "suit": "Major", "image": "major/the_devil.jpg", "meaning": "Temptation’s master; the soul’s chains are forged from its own desire." },
-    { "name": "The Tower", "suit": "Major", "image": "major/the_tower.jpg", "meaning": "Collapse of hubris; a divine hand tears down what mortals build in arrogance." },
-    { "name": "The Star", "suit": "Major", "image": "major/the_star.jpg", "meaning": "Hope flickers in the ruins; faith as fragile as glass, yet radiant still." },
-    { "name": "The Moon", "suit": "Major", "image": "major/the_moon.jpg", "meaning": "The madness of the night; truth wears a mask of silver lies." },
-    { "name": "The Sun", "suit": "Major", "image": "major/the_sun.jpg", "meaning": "Triumph radiant yet blinding; light reveals as much as it burns away." },
-    { "name": "Judgment", "suit": "Major", "image": "major/judgment.jpg", "meaning": "The dead rise not for mercy, but to see justice done in fire." },
-    { "name": "The World", "suit": "Major", "image": "major/the_world.jpg", "meaning": "Completion, hollow and inevitable; the serpent devours its own tail." },
-
-    { "name": "Ace of Cups", "suit": "Cups", "image": "cups/ace_of_cups.jpg", "meaning": "A heart’s first stirring, or the first drop of madness overflowing." },
-    { "name": "Two of Cups", "suit": "Cups", "image": "cups/two_of_cups.jpg", "meaning": "A bond forged in desire or desperation; unity that may yet sour to blood." },
-    { "name": "Three of Cups", "suit": "Cups", "image": "cups/three_of_cups.jpg", "meaning": "Joy drunk deep enough to drown; revelry before the storm." },
-    { "name": "Four of Cups", "suit": "Cups", "image": "cups/four_of_cups.jpg", "meaning": "Complacency in comfort; the rot of contentment before collapse." },
-    { "name": "Five of Cups", "suit": "Cups", "image": "cups/five_of_cups.jpg", "meaning": "Loss unheeded; tears fall on ground too dry to drink them." },
-    { "name": "Six of Cups", "suit": "Cups", "image": "cups/six_of_cups.jpg", "meaning": "Memories sweetened by decay; nostalgia for a world that never was." },
-    { "name": "Seven of Cups", "suit": "Cups", "image": "cups/seven_of_cups.jpg", "meaning": "Illusion’s banquet; every cup a trap for the thirsty soul." },
-    { "name": "Eight of Cups", "suit": "Cups", "image": "cups/eight_of_cups.jpg", "meaning": "Abandonment of false sanctuaries; walking away from the corpse of comfort." },
-    { "name": "Nine of Cups", "suit": "Cups", "image": "cups/nine_of_cups.jpg", "meaning": "Desire fulfilled, yet never sated; the feast that leaves the heart hollow." },
-    { "name": "Ten of Cups", "suit": "Cups", "image": "cups/ten_of_cups.jpg", "meaning": "Harmony achieved through denial; the dream that devours waking life." },
-
-    { "name": "Ace of Swords", "suit": "Swords", "image": "swords/ace_of_swords.jpg", "meaning": "The first cut that divides truth from delusion; every edge demands blood." },
-    { "name": "Two of Swords", "suit": "Swords", "image": "swords/two_of_swords.jpg", "meaning": "Balance through blindness; indecision carved in steel." },
-    { "name": "Three of Swords", "suit": "Swords", "image": "swords/three_of_swords.jpg", "meaning": "Heartbreak as revelation; pain as the truest teacher." },
-    { "name": "Four of Swords", "suit": "Swords", "image": "swords/four_of_swords.jpg", "meaning": "Rest upon a bed of blades; peace that cuts both ways." },
-    { "name": "Five of Swords", "suit": "Swords", "image": "swords/five_of_swords.jpg", "meaning": "Victory stripped of honor; the taste of triumph soured by treachery." },
-    { "name": "Six of Swords", "suit": "Swords", "image": "swords/six_of_swords.jpg", "meaning": "Passage through sorrow; every oarstroke carries the weight of regret." },
-    { "name": "Seven of Swords", "suit": "Swords", "image": "swords/seven_of_swords.jpg", "meaning": "Deceit in motion; the quiet theft of fate." },
-    { "name": "Eight of Swords", "suit": "Swords", "image": "swords/eight_of_swords.jpg", "meaning": "Trapped by one’s own fears; a prison built from thought and shame." },
-    { "name": "Nine of Swords", "suit": "Swords", "image": "swords/nine_of_swords.jpg", "meaning": "Nightmares with open eyes; torment that wears the face of truth." },
-    { "name": "Ten of Swords", "suit": "Swords", "image": "swords/ten_of_swords.jpg", "meaning": "The end of all things; betrayal complete, ruin absolute." },
-
-    { "name": "Ace of Wands", "suit": "Wands", "image": "wands/ace_of_wands.jpg", "meaning": "A spark of creation or destruction; the fire does not care what it consumes." },
-    { "name": "Two of Wands", "suit": "Wands", "image": "wands/two_of_wands.jpg", "meaning": "Ambition set aflame; the world awaits the next conquest." },
-    { "name": "Three of Wands", "suit": "Wands", "image": "wands/three_of_wands.jpg", "meaning": "Vision beyond the known; hunger for what lies beyond the edge." },
-    { "name": "Four of Wands", "suit": "Wands", "image": "wands/four_of_wands.jpg", "meaning": "Celebration built on ashes; victory that costs more than it grants." },
-    { "name": "Five of Wands", "suit": "Wands", "image": "wands/five_of_wands.jpg", "meaning": "Strife as sport; the endless struggle that defines all life." },
-    { "name": "Six of Wands", "suit": "Wands", "image": "wands/six_of_wands.jpg", "meaning": "Triumph earned through scars; glory fades, the wounds remain." },
-    { "name": "Seven of Wands", "suit": "Wands", "image": "wands/seven_of_wands.jpg", "meaning": "Defiance against the tide; one stands though all others fall." },
-    { "name": "Eight of Wands", "suit": "Wands", "image": "wands/eight_of_wands.jpg", "meaning": "Momentum unchained; speed that crushes hesitation beneath its feet." },
-    { "name": "Nine of Wands", "suit": "Wands", "image": "wands/nine_of_wands.jpg", "meaning": "The survivor’s burden; resolve tempered by endless war." },
-    { "name": "Ten of Wands", "suit": "Wands", "image": "wands/ten_of_wands.jpg", "meaning": "Labor without rest; strength broken beneath the weight of its own ambition." },
-
-    { "name": "Ace of Pentacles", "suit": "Pentacles", "image": "pentacles/ace_of_pentacles.jpg", "meaning": "The first stone laid upon a foundation of greed or survival." },
-    { "name": "Two of Pentacles", "suit": "Pentacles", "image": "pentacles/two_of_pentacles.jpg", "meaning": "Balance amid chaos; fortune’s wheel spun by trembling hands." },
-    { "name": "Three of Pentacles", "suit": "Pentacles", "image": "pentacles/three_of_pentacles.jpg", "meaning": "Craft as devotion; the maker’s pride is kin to ruin." },
-    { "name": "Four of Pentacles", "suit": "Pentacles", "image": "pentacles/four_of_pentacles.jpg", "meaning": "Greed as armor; wealth becomes its keeper’s cage." },
-    { "name": "Five of Pentacles", "suit": "Pentacles", "image": "pentacles/five_of_pentacles.jpg", "meaning": "Exile, hunger, and the cold indifference of gods and men." },
-    { "name": "Six of Pentacles", "suit": "Pentacles", "image": "pentacles/six_of_pentacles.jpg", "meaning": "Charity as vanity; the giver and beggar both bound in debt." },
-    { "name": "Seven of Pentacles", "suit": "Pentacles", "image": "pentacles/seven_of_pentacles.jpg", "meaning": "Patience curdled into obsession; waiting for fruit that never ripens." },
-    { "name": "Eight of Pentacles", "suit": "Pentacles", "image": "pentacles/eight_of_pentacles.jpg", "meaning": "Perfection pursued to madness; creation without purpose." },
-    { "name": "Nine of Pentacles", "suit": "Pentacles", "image": "pentacles/nine_of_pentacles.jpg", "meaning": "Luxury earned on backs of ghosts; solitude dressed in silk." },
-    { "name": "Ten of Pentacles", "suit": "Pentacles", "image": "pentacles/ten_of_pentacles.jpg", "meaning": "Legacy built on graves; inheritance of dust and bone." }
-  ],
-
-  "professions": [
-    { "name": "Alchemist", "description": "A seeker of forbidden transformations; one who mistakes corruption for wisdom." },
-    { "name": "Apothecary", "description": "A healer who knows that every cure carries a cost; mercy measured in draughts of poison." },
-    { "name": "Armorer", "description": "A craftsman who forges safety from the pain of others; every plate echoes with screams." },
-    { "name": "Assassin", "description": "A shadow in human form; the hand that ends kings and beggars alike." },
-    { "name": "Archer", "description": "A hunter whose arrows speak truer than his tongue; distance is his mercy." },
-    { "name": "Bard", "description": "A chronicler of ruin; their verses are both song and curse." },
-    { "name": "Bounty Hunter", "description": "One who chases men for coin, yet always runs from his own sins." },
-    { "name": "Blacksmith", "description": "The hammer’s priest, beating faith into molten iron." },
-    { "name": "Captain of the Guard", "description": "A weary sentinel who holds the line between order and oblivion." },
-    { "name": "Cleric", "description": "A vessel for fading gods; his prayers are answered only in blood." },
-    { "name": "Druid", "description": "A worshipper of tooth and root; the wild answers their call in teeth and rot." },
-    { "name": "Falconer", "description": "Master of the skies; his talons are merely borrowed from his beasts." },
-    { "name": "Fighter", "description": "A soldier of endless wars; his faith is the steel he wields." },
-    { "name": "Gladiator", "description": "A performer in the theater of blood; every cheer another scar." },
-    { "name": "Healer", "description": "A mender of flesh and breaker of souls; mercy and cruelty are twins in her hands." },
-    { "name": "Hunter", "description": "Predator of beasts and men alike; hunger is his only creed." },
-    { "name": "Inquisitor", "description": "The flame that purifies; the lash that redeems. Truth burns brightest in screams." },
-    { "name": "Jester", "description": "A fool who speaks wisdom wrapped in madness; laughter hides the blade." },
-    { "name": "Knight", "description": "A servant of ideals long dead; his armor is a tomb of duty." },
-    { "name": "Mercenary", "description": "Loyal only to coin; his blade sings the song of silver and sin." },
-    { "name": "Necromancer", "description": "One who commands the silence of the grave and listens for answers only the dead can give." },
-    { "name": "Oracle", "description": "A seer whose visions come at the cost of sanity; truth devours those who seek it." },
-    { "name": "Paladin", "description": "A zealot encased in righteousness; salvation through slaughter." },
-    { "name": "Ranger", "description": "A ghost of the wilderness; the hunt is his prayer and his curse." },
-    { "name": "Rogue", "description": "A hand in every purse, a dagger in every back; loyalty sold cheap." },
-    { "name": "Scholar", "description": "A collector of forbidden words; wisdom gnaws at the mind that holds it." },
-    { "name": "Shaman", "description": "A voice for the dead winds; spirit and flesh walk as one within him." },
-    { "name": "Squire", "description": "An apprentice in servitude; dreams of honor fade beneath a master's shadow." },
-    { "name": "Tanner", "description": "Skin is his trade; flesh is his art. He knows the worth of every hide." },
-    { "name": "Wizard", "description": "Bearer of secret fire; power demands a price none can long afford." },
-    { "name": "Artist", "description": "A sculptor of nightmares and beauty alike; his canvas bleeds truth." },
-    { "name": "Guard", "description": "A nameless protector of crumbling walls; duty endures where faith does not." },
-    { "name": "Brute", "description": "A weapon shaped by suffering; his hands know only ruin." }
-  ],
-
-  "races": [
-    "Human",
-    "Fey",
-    "Dwarf",
-    "Gnome",
-    "Halfling",
-    "Orc",
-    "Ogre",
-    "Half-Giant",
-    "Half-Demon"
-  ],
-
-  "genders": [
-    "He / Him",
-    "She / Her",
-    "It / Its"
-  ]
+    "tone": "A grimdark sword-and-sorcery world of blood, ruin, and fate — where heroes claw meaning from the bones of dead gods.",
+    "cards": [
+        {
+            "name": "The Fool",
+            "suit": "Major",
+            "image": "major/the_fool.jpg",
+            "meaning": "A wanderer unburdened by reason or fate, stepping into the unknown where madness and glory share a cup."
+        },
+        {
+            "name": "The Magician",
+            "suit": "Major",
+            "image": "major/the_magician.jpg",
+            "meaning": "Will made flesh; mastery over chaos through the illusion of control. The Magician bends power, but power bends back."
+        },
+        {
+            "name": "The High Priestess",
+            "suit": "Major",
+            "image": "major/the_high_priestess.jpg",
+            "meaning": "Keeper of veiled truths; her silence is a weapon sharper than any blade."
+        },
+        {
+            "name": "The Empress",
+            "suit": "Major",
+            "image": "major/the_empress.jpg",
+            "meaning": "Mother of decay and rebirth, her touch brings both harvest and ruin."
+        },
+        {
+            "name": "The Emperor",
+            "suit": "Major",
+            "image": "major/the_emperor.jpg",
+            "meaning": "A ruler forged in blood; his law is carved into the bones of the fallen."
+        },
+        {
+            "name": "The Hierophant",
+            "suit": "Major",
+            "image": "major/the_hierophant.jpg",
+            "meaning": "A priest of hollow gods; faith as a chain, not a path."
+        },
+        {
+            "name": "The Lovers",
+            "suit": "Major",
+            "image": "major/the_lovers.jpg",
+            "meaning": "Union through destruction; passion that burns the world clean."
+        },
+        {
+            "name": "The Chariot",
+            "suit": "Major",
+            "image": "major/the_chariot.jpg",
+            "meaning": "Victory through domination; the wheel crushes both enemy and self."
+        },
+        {
+            "name": "Strength",
+            "suit": "Major",
+            "image": "major/strength.jpg",
+            "meaning": "Courage is a beast tamed only by will; blood answers to neither mercy nor fear."
+        },
+        {
+            "name": "The Hermit",
+            "suit": "Major",
+            "image": "major/the_hermit.jpg",
+            "meaning": "The light of solitude reveals that truth is an abyss, not a path."
+        },
+        {
+            "name": "Wheel of Fortune",
+            "suit": "Major",
+            "image": "major/wheel_of_fortune.jpg",
+            "meaning": "The turning of fate grinds men into dust and kings into beggars."
+        },
+        {
+            "name": "Justice",
+            "suit": "Major",
+            "image": "major/justice.jpg",
+            "meaning": "Balance bought with blood; the scales never weigh mercy."
+        },
+        {
+            "name": "The Hanged Man",
+            "suit": "Major",
+            "image": "major/the_hanged_man.jpg",
+            "meaning": "Sacrifice without redemption; enlightenment found at the edge of despair."
+        },
+        {
+            "name": "Death",
+            "suit": "Major",
+            "image": "major/death.jpg",
+            "meaning": "The end that births beginnings; decay is life’s cruel twin."
+        },
+        {
+            "name": "Temperance",
+            "suit": "Major",
+            "image": "major/temperance.jpg",
+            "meaning": "Harmony forged through pain; the alchemy of endurance and surrender."
+        },
+        {
+            "name": "The Devil",
+            "suit": "Major",
+            "image": "major/the_devil.jpg",
+            "meaning": "Temptation’s master; the soul’s chains are forged from its own desire."
+        },
+        {
+            "name": "The Tower",
+            "suit": "Major",
+            "image": "major/the_tower.jpg",
+            "meaning": "Collapse of hubris; a divine hand tears down what mortals build in arrogance."
+        },
+        {
+            "name": "The Star",
+            "suit": "Major",
+            "image": "major/the_star.jpg",
+            "meaning": "Hope flickers in the ruins; faith as fragile as glass, yet radiant still."
+        },
+        {
+            "name": "The Moon",
+            "suit": "Major",
+            "image": "major/the_moon.jpg",
+            "meaning": "The madness of the night; truth wears a mask of silver lies."
+        },
+        {
+            "name": "The Sun",
+            "suit": "Major",
+            "image": "major/the_sun.jpg",
+            "meaning": "Triumph radiant yet blinding; light reveals as much as it burns away."
+        },
+        {
+            "name": "Judgment",
+            "suit": "Major",
+            "image": "major/judgment.jpg",
+            "meaning": "The dead rise not for mercy, but to see justice done in fire."
+        },
+        {
+            "name": "The World",
+            "suit": "Major",
+            "image": "major/the_world.jpg",
+            "meaning": "Completion, hollow and inevitable; the serpent devours its own tail."
+        },
+        {
+            "name": "Ace of Cups",
+            "suit": "Cups",
+            "image": "cups/ace_of_cups.jpg",
+            "meaning": "A heart’s first stirring, or the first drop of madness overflowing."
+        },
+        {
+            "name": "Two of Cups",
+            "suit": "Cups",
+            "image": "cups/two_of_cups.jpg",
+            "meaning": "A bond forged in desire or desperation; unity that may yet sour to blood."
+        },
+        {
+            "name": "Three of Cups",
+            "suit": "Cups",
+            "image": "cups/three_of_cups.jpg",
+            "meaning": "Joy drunk deep enough to drown; revelry before the storm."
+        },
+        {
+            "name": "Four of Cups",
+            "suit": "Cups",
+            "image": "cups/four_of_cups.jpg",
+            "meaning": "Complacency in comfort; the rot of contentment before collapse."
+        },
+        {
+            "name": "Five of Cups",
+            "suit": "Cups",
+            "image": "cups/five_of_cups.jpg",
+            "meaning": "Loss unheeded; tears fall on ground too dry to drink them."
+        },
+        {
+            "name": "Six of Cups",
+            "suit": "Cups",
+            "image": "cups/six_of_cups.jpg",
+            "meaning": "Memories sweetened by decay; nostalgia for a world that never was."
+        },
+        {
+            "name": "Seven of Cups",
+            "suit": "Cups",
+            "image": "cups/seven_of_cups.jpg",
+            "meaning": "Illusion’s banquet; every cup a trap for the thirsty soul."
+        },
+        {
+            "name": "Eight of Cups",
+            "suit": "Cups",
+            "image": "cups/eight_of_cups.jpg",
+            "meaning": "Abandonment of false sanctuaries; walking away from the corpse of comfort."
+        },
+        {
+            "name": "Nine of Cups",
+            "suit": "Cups",
+            "image": "cups/nine_of_cups.jpg",
+            "meaning": "Desire fulfilled, yet never sated; the feast that leaves the heart hollow."
+        },
+        {
+            "name": "Ten of Cups",
+            "suit": "Cups",
+            "image": "cups/ten_of_cups.jpg",
+            "meaning": "Harmony achieved through denial; the dream that devours waking life."
+        },
+        {
+            "name": "Ace of Swords",
+            "suit": "Swords",
+            "image": "swords/ace_of_swords.jpg",
+            "meaning": "The first cut that divides truth from delusion; every edge demands blood."
+        },
+        {
+            "name": "Two of Swords",
+            "suit": "Swords",
+            "image": "swords/two_of_swords.jpg",
+            "meaning": "Balance through blindness; indecision carved in steel."
+        },
+        {
+            "name": "Three of Swords",
+            "suit": "Swords",
+            "image": "swords/three_of_swords.jpg",
+            "meaning": "Heartbreak as revelation; pain as the truest teacher."
+        },
+        {
+            "name": "Four of Swords",
+            "suit": "Swords",
+            "image": "swords/four_of_swords.jpg",
+            "meaning": "Rest upon a bed of blades; peace that cuts both ways."
+        },
+        {
+            "name": "Five of Swords",
+            "suit": "Swords",
+            "image": "swords/five_of_swords.jpg",
+            "meaning": "Victory stripped of honor; the taste of triumph soured by treachery."
+        },
+        {
+            "name": "Six of Swords",
+            "suit": "Swords",
+            "image": "swords/six_of_swords.jpg",
+            "meaning": "Passage through sorrow; every oarstroke carries the weight of regret."
+        },
+        {
+            "name": "Seven of Swords",
+            "suit": "Swords",
+            "image": "swords/seven_of_swords.jpg",
+            "meaning": "Deceit in motion; the quiet theft of fate."
+        },
+        {
+            "name": "Eight of Swords",
+            "suit": "Swords",
+            "image": "swords/eight_of_swords.jpg",
+            "meaning": "Trapped by one’s own fears; a prison built from thought and shame."
+        },
+        {
+            "name": "Nine of Swords",
+            "suit": "Swords",
+            "image": "swords/nine_of_swords.jpg",
+            "meaning": "Nightmares with open eyes; torment that wears the face of truth."
+        },
+        {
+            "name": "Ten of Swords",
+            "suit": "Swords",
+            "image": "swords/ten_of_swords.jpg",
+            "meaning": "The end of all things; betrayal complete, ruin absolute."
+        },
+        {
+            "name": "Ace of Wands",
+            "suit": "Wands",
+            "image": "wands/ace_of_wands.jpg",
+            "meaning": "A spark of creation or destruction; the fire does not care what it consumes."
+        },
+        {
+            "name": "Two of Wands",
+            "suit": "Wands",
+            "image": "wands/two_of_wands.jpg",
+            "meaning": "Ambition set aflame; the world awaits the next conquest."
+        },
+        {
+            "name": "Three of Wands",
+            "suit": "Wands",
+            "image": "wands/three_of_wands.jpg",
+            "meaning": "Vision beyond the known; hunger for what lies beyond the edge."
+        },
+        {
+            "name": "Four of Wands",
+            "suit": "Wands",
+            "image": "wands/four_of_wands.jpg",
+            "meaning": "Celebration built on ashes; victory that costs more than it grants."
+        },
+        {
+            "name": "Five of Wands",
+            "suit": "Wands",
+            "image": "wands/five_of_wands.jpg",
+            "meaning": "Strife as sport; the endless struggle that defines all life."
+        },
+        {
+            "name": "Six of Wands",
+            "suit": "Wands",
+            "image": "wands/six_of_wands.jpg",
+            "meaning": "Triumph earned through scars; glory fades, the wounds remain."
+        },
+        {
+            "name": "Seven of Wands",
+            "suit": "Wands",
+            "image": "wands/seven_of_wands.jpg",
+            "meaning": "Defiance against the tide; one stands though all others fall."
+        },
+        {
+            "name": "Eight of Wands",
+            "suit": "Wands",
+            "image": "wands/eight_of_wands.jpg",
+            "meaning": "Momentum unchained; speed that crushes hesitation beneath its feet."
+        },
+        {
+            "name": "Nine of Wands",
+            "suit": "Wands",
+            "image": "wands/nine_of_wands.jpg",
+            "meaning": "The survivor’s burden; resolve tempered by endless war."
+        },
+        {
+            "name": "Ten of Wands",
+            "suit": "Wands",
+            "image": "wands/ten_of_wands.jpg",
+            "meaning": "Labor without rest; strength broken beneath the weight of its own ambition."
+        },
+        {
+            "name": "Ace of Pentacles",
+            "suit": "Pentacles",
+            "image": "pentacles/ace_of_pentacles.jpg",
+            "meaning": "The first stone laid upon a foundation of greed or survival."
+        },
+        {
+            "name": "Two of Pentacles",
+            "suit": "Pentacles",
+            "image": "pentacles/two_of_pentacles.jpg",
+            "meaning": "Balance amid chaos; fortune’s wheel spun by trembling hands."
+        },
+        {
+            "name": "Three of Pentacles",
+            "suit": "Pentacles",
+            "image": "pentacles/three_of_pentacles.jpg",
+            "meaning": "Craft as devotion; the maker’s pride is kin to ruin."
+        },
+        {
+            "name": "Four of Pentacles",
+            "suit": "Pentacles",
+            "image": "pentacles/four_of_pentacles.jpg",
+            "meaning": "Greed as armor; wealth becomes its keeper’s cage."
+        },
+        {
+            "name": "Five of Pentacles",
+            "suit": "Pentacles",
+            "image": "pentacles/five_of_pentacles.jpg",
+            "meaning": "Exile, hunger, and the cold indifference of gods and men."
+        },
+        {
+            "name": "Six of Pentacles",
+            "suit": "Pentacles",
+            "image": "pentacles/six_of_pentacles.jpg",
+            "meaning": "Charity as vanity; the giver and beggar both bound in debt."
+        },
+        {
+            "name": "Seven of Pentacles",
+            "suit": "Pentacles",
+            "image": "pentacles/seven_of_pentacles.jpg",
+            "meaning": "Patience curdled into obsession; waiting for fruit that never ripens."
+        },
+        {
+            "name": "Eight of Pentacles",
+            "suit": "Pentacles",
+            "image": "pentacles/eight_of_pentacles.jpg",
+            "meaning": "Perfection pursued to madness; creation without purpose."
+        },
+        {
+            "name": "Nine of Pentacles",
+            "suit": "Pentacles",
+            "image": "pentacles/nine_of_pentacles.jpg",
+            "meaning": "Luxury earned on backs of ghosts; solitude dressed in silk."
+        },
+        {
+            "name": "Ten of Pentacles",
+            "suit": "Pentacles",
+            "image": "pentacles/ten_of_pentacles.jpg",
+            "meaning": "Legacy built on graves; inheritance of dust and bone."
+        }
+    ],
+    "professions": [
+        {
+            "name": "Alchemist",
+            "description": "A seeker of forbidden transformations; one who mistakes corruption for wisdom."
+        },
+        {
+            "name": "Apothecary",
+            "description": "A healer who knows that every cure carries a cost; mercy measured in draughts of poison."
+        },
+        {
+            "name": "Armorer",
+            "description": "A craftsman who forges safety from the pain of others; every plate echoes with screams."
+        },
+        {
+            "name": "Assassin",
+            "description": "A shadow in human form; the hand that ends kings and beggars alike."
+        },
+        {
+            "name": "Archer",
+            "description": "A hunter whose arrows speak truer than his tongue; distance is his mercy."
+        },
+        {
+            "name": "Bard",
+            "description": "A chronicler of ruin; their verses are both song and curse."
+        },
+        {
+            "name": "Bounty Hunter",
+            "description": "One who chases men for coin, yet always runs from his own sins."
+        },
+        {
+            "name": "Blacksmith",
+            "description": "The hammer’s priest, beating faith into molten iron."
+        },
+        {
+            "name": "Captain of the Guard",
+            "description": "A weary sentinel who holds the line between order and oblivion."
+        },
+        {
+            "name": "Cleric",
+            "description": "A vessel for fading gods; his prayers are answered only in blood."
+        },
+        {
+            "name": "Druid",
+            "description": "A worshipper of tooth and root; the wild answers their call in teeth and rot."
+        },
+        {
+            "name": "Falconer",
+            "description": "Master of the skies; his talons are merely borrowed from his beasts."
+        },
+        {
+            "name": "Fighter",
+            "description": "A soldier of endless wars; his faith is the steel he wields."
+        },
+        {
+            "name": "Gladiator",
+            "description": "A performer in the theater of blood; every cheer another scar."
+        },
+        {
+            "name": "Healer",
+            "description": "A mender of flesh and breaker of souls; mercy and cruelty are twins in her hands."
+        },
+        {
+            "name": "Hunter",
+            "description": "Predator of beasts and men alike; hunger is his only creed."
+        },
+        {
+            "name": "Inquisitor",
+            "description": "The flame that purifies; the lash that redeems. Truth burns brightest in screams."
+        },
+        {
+            "name": "Jester",
+            "description": "A fool who speaks wisdom wrapped in madness; laughter hides the blade."
+        },
+        {
+            "name": "Knight",
+            "description": "A servant of ideals long dead; his armor is a tomb of duty."
+        },
+        {
+            "name": "Mercenary",
+            "description": "Loyal only to coin; his blade sings the song of silver and sin."
+        },
+        {
+            "name": "Necromancer",
+            "description": "One who commands the silence of the grave and listens for answers only the dead can give."
+        },
+        {
+            "name": "Oracle",
+            "description": "A seer whose visions come at the cost of sanity; truth devours those who seek it."
+        },
+        {
+            "name": "Paladin",
+            "description": "A zealot encased in righteousness; salvation through slaughter."
+        },
+        {
+            "name": "Ranger",
+            "description": "A ghost of the wilderness; the hunt is his prayer and his curse."
+        },
+        {
+            "name": "Rogue",
+            "description": "A hand in every purse, a dagger in every back; loyalty sold cheap."
+        },
+        {
+            "name": "Scholar",
+            "description": "A collector of forbidden words; wisdom gnaws at the mind that holds it."
+        },
+        {
+            "name": "Shaman",
+            "description": "A voice for the dead winds; spirit and flesh walk as one within him."
+        },
+        {
+            "name": "Squire",
+            "description": "An apprentice in servitude; dreams of honor fade beneath a master's shadow."
+        },
+        {
+            "name": "Tanner",
+            "description": "Skin is his trade; flesh is his art. He knows the worth of every hide."
+        },
+        {
+            "name": "Wizard",
+            "description": "Bearer of secret fire; power demands a price none can long afford."
+        },
+        {
+            "name": "Artist",
+            "description": "A sculptor of nightmares and beauty alike; his canvas bleeds truth."
+        },
+        {
+            "name": "Guard",
+            "description": "A nameless protector of crumbling walls; duty endures where faith does not."
+        },
+        {
+            "name": "Brute",
+            "description": "A weapon shaped by suffering; his hands know only ruin."
+        }
+    ],
+    "races": [
+        "Human",
+        "Fey",
+        "Dwarf",
+        "Gnome",
+        "Halfling",
+        "Orc",
+        "Ogre",
+        "Half-Giant",
+        "Half-Demon"
+    ],
+    "genders": [
+        "He / Him",
+        "She / Her",
+        "It / Its"
+    ]
 }
